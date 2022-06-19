@@ -20,9 +20,16 @@
             </div>
 
             <div class="buttons">
-                <button id="dp-flex-button-1">display: block</button>
-                <button id="dp-flex-button-2" class="active">display: flex</button>
+                <button id="dp-flex-button-1">block</button>
+                <button id="dp-flex-button-2" class="active">flex</button>
             </div>
+
+            <div class="description">
+                <p class="about">Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.</p>
+                <p><span class="usability">Применяется ко:</span> всем элементам.</p>
+                <p><span class="prop">flex:</span> элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели.</p>
+            </div>
+            
             
         </section>
         <section class="dp-flex">
@@ -35,10 +42,20 @@
             </div>
 
             <div class="buttons">
-                <button id="dp-flex-button-1_2">flex-direction: row</button>
-                <button id="dp-flex-button-2_2">flex-direction: row-reverse</button>
-                <button id="dp-flex-button-3_2">flex-direction: column</button>
-                <button id="dp-flex-button-4_2">flex-direction: column-reverse</button>
+                <button id="dp-flex-button-1_2">row</button>
+                <button id="dp-flex-button-2_2">row-reverse</button>
+                <button id="dp-flex-button-3_2">column</button>
+                <button id="dp-flex-button-4_2">column-reverse</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство flex-direction задаёт направление основных осей в контейнере и тем самым определяет положение флексов в контейнере. На само направление также влияет значение атрибута dir у контейнера.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="prop">row:</span> Главная ось направлена так же, как и ориентация текста, по умолчанию слева направо. Если значение dir задано как rtl, то направление оси идёт справа налево.</p>
+                <p><span class="prop">row-reverse:</span> Похоже на значение row, но меняются местами начальная и конечная точки и главная ось направлена справа налево. Если значение dir задано как rtl, то направление оси идёт слева направо.</p>
+                <p><span class="prop">column:</span> Главная ось располагается вертикально и направлена сверху вниз.</p>
+                <p><span class="prop">column-reverse:</span> Главная ось располагается вертикально, но меняется положение начальной и конечной точек и ось направлена снизу вверх.</p>
+
+
             </div>
             
         </section>
@@ -59,11 +76,129 @@
             </div>
 
             <div class="buttons">
-                <button id="dp-flex-button-1_3">flex-wrap: nowrap</button>
-                <button id="dp-flex-button-2_3">flex-wrap: wrap</button>
-                <button id="dp-flex-button-3_3">flex-wrap: wrap-reverse</button>
+                <button id="dp-flex-button-1_3">nowrap</button>
+                <button id="dp-flex-button-2_3">wrap</button>
+                <button id="dp-flex-button-3_3">wrap-reverse</button>
             </div>
-            
+            <div class="description">
+                <p class="about">Свойство flex-wrap Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк. Если перенос строк допускается, то свойство также позволяет контролировать направление, в котором выкладываются строки.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="default">Значение по умолчанию:</span> nowrap</p>
+                <p><span class="prop">nowrap:</span> Флексы выстраиваются в одну линию.</p>
+                <p><span class="prop">wrap:</span> Флексы выстраиваются в несколько строк, их направление задаётся свойством flex-direction.</p>
+                <p><span class="prop">wrap-reverse:</span> Флексы выстраиваются в несколько строк, в направлении, противоположном flex-direction.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">flex-flow</span>
+            <div class="show-container">
+                <div class="block"><span>1</span></div>
+                <div class="block"><span>2</span></div>
+                <div class="block"><span>3</span></div>
+                <div class="block"><span>4</span></div>
+                <div class="block"><span>5</span></div>
+                <div class="block"><span>6</span></div>
+                <div class="block"><span>7</span></div>
+                <div class="block"><span>8</span></div>
+                <div class="block"><span>9</span></div>
+                <div class="block"><span>10</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_4">row nowrap</button>
+                <button id="dp-flex-button-2_4">column-reverse</button>
+                <button id="dp-flex-button-3_4">column wrap</button>
+                <button id="dp-flex-button-4_4">row-reverse wrap-reverse</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство flex-flow является сокращённым свойством для отдельных свойств flex-direction и flex-wrap.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="default">Значение по умолчанию:</span> row nowrap.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">order</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_5">-1</button>
+                <button id="dp-flex-button-2_5">0</button>
+                <button id="dp-flex-button-3_5">1</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство order определяет порядок вывода флексов внутри флекс-контейнера. Элементы располагаются согласно значениям свойства order от меньшего к большему. При равных значениях order элементы выводятся в том порядке, в каком они появляются в исходном коде.</p>
+                <p><span class="usability">Применяется ко:</span> flex элементам.</p>
+                <p><span class="default">Значение по умолчанию:</span> 0.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">justify-content</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_6">flex-start</button>
+                <button id="dp-flex-button-2_6">flex-end</button>
+                <button id="dp-flex-button-3_6">center</button>
+                <button id="dp-flex-button-4_6">space-between</button>
+                <button id="dp-flex-button-5_6">space-around</button>
+                <button id="dp-flex-button-6_6">space-evenly</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство justify-content определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера. Это делается после того, как применяются размеры и автоматические отступы, за исключением ситуации, когда по крайней мере у одного элемента flex-grow больше нуля. При этом не остаётся никакого свободного пространства для манипулирования.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="default">Значение по умолчанию:</span> flex-start.</p>
+                <p><span class="prop">flex-start:</span> Флексы прижаты к началу строки.</p>
+                <p><span class="prop">flex-end:</span> Флексы прижаты к концу строки.</p>
+                <p><span class="prop">center:</span> Флексы выравниваются по центру строки.</p>
+                <p><span class="prop">space-between:</span> Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.</p>
+                <p><span class="prop">space-around:</span> Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после последнего элементов равно половине пространства между двумя соседними элементами.</p>
+                <p><span class="prop">space-evenly:</span> Флексы распределяются так, что расстояние между любыми двумя соседними элементами, а также перед первым и после последнего, было одинаковым.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">align-items</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_7">flex-start</button>
+                <button id="dp-flex-button-2_7">flex-end</button>
+                <button id="dp-flex-button-3_7">center</button>
+                <button id="dp-flex-button-4_7">baseline</button>
+                <button id="dp-flex-button-5_7">stretch</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство align-items выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="default">Значение по умолчанию:</span> stretch.</p>
+                <p><span class="prop">flex-start:</span> Флексы выравниваются в начале поперечной оси контейнера.</p>
+                <p><span class="prop">flex-end:</span> Флексы выравниваются в конце поперечной оси контейнера.</p>
+                <p><span class="prop">center:</span> Флексы выравниваются по линии поперечной оси.</p>
+                <p><span class="prop">baseline:</span> Флексы выравниваются по их базовой линии.</p>
+                <p><span class="prop">Stretch:</span> Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.</p>
+            </div>
         </section>
 
     </div>
