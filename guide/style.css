@@ -50,6 +50,7 @@ body{
     margin-top: 15px;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 .buttons button{
     font-size: 40px;
@@ -59,6 +60,7 @@ body{
     background-color: #a068b3;
     cursor: pointer;
     transition: all ease 0.3s;
+    margin: 5px;
     
 
 }
@@ -71,6 +73,7 @@ body{
 .block:nth-child(2n){
     width: 100px;
     height: 100px;
+    padding: 0 10px;
     background-color: #ed73fb;
     margin: 20px;
     border: solid #5c3669 5px;
@@ -81,6 +84,7 @@ body{
 .block:nth-child(2n + 1){
     width: 100px;
     height: 100px;
+    padding: 0 10px;
     background-color: red;
     margin: 20px;
     border: solid #5c3669 5px;
