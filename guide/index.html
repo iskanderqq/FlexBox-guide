@@ -201,6 +201,132 @@
             </div>
         </section>
 
+        <section class="dp-flex">
+            <span class="flex-val-name">align-self</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_8">flex-start</button>
+                <button id="dp-flex-button-2_8">flex-end</button>
+                <button id="dp-flex-button-3_8">center</button>
+                <button id="dp-flex-button-4_8">baseline</button>
+                <button id="dp-flex-button-5_8">stretch</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнерам.</p>
+                <p><span class="default">Значение по умолчанию:</span> auto.</p>
+                <p><span class="prop">flex-start:</span> Элемент выравнивается в начале поперечной оси контейнера.</p>
+                <p><span class="prop">flex-end:</span> Элемент выравнивается в конце поперечной оси контейнера.</p>
+                <p><span class="prop">center:</span> Элемент выравнивается по центральной линии на поперечной оси.</p>
+                <p><span class="prop">baseline:</span> Элемент выравнивается по базовой линии текста.</p>
+                <p><span class="prop">Stretch:</span> Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.</p>
+            </div>
+        </section>
+
+
+
+        <section class="dp-flex">
+            <span class="flex-val-name">align-content</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_9">flex-start</button>
+                <button id="dp-flex-button-2_9">flex-end</button>
+                <button id="dp-flex-button-3_9">center</button>
+                <button id="dp-flex-button-4_9">space-between</button>
+                <button id="dp-flex-button-5_9">space-around</button>
+                <button id="dp-flex-button-6_9">space-evenly</button>
+                <button id="dp-flex-button-7_9">stretch</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство align-content задаёт тип выравнивания строк внутри flex контейнера по поперечной оси при наличии свободного пространства.</p>
+                <p><span class="usability">Применяется ко:</span> flex контейнеру.</p>
+                <p><span class="default">Значение по умолчанию:</span> stretch.</p>
+                <p><span class="prop">flex-start:</span> Строки располагаются в начале поперечной оси. Каждая следующая строка идёт вровень с предыдущей.</p>
+                <p><span class="prop">flex-end:</span> Строки располагаются начиная с конца поперечной оси. Каждая предыдущая строка идёт вровень со следующей.</p>
+                <p><span class="prop">center:</span> Строки располагаются по центру контейнера.</p>
+                <p><span class="prop">space-between:</span> Строки равномерно распределяются в контейнере и расстояние между ними одинаково.</p>
+                <p><span class="prop">space-around:</span> Строки равномерно распределяются таким образом, чтобы пространство между двумя соседними строками было одинаковым. Пустое пространство перед первой строкой и после последней строки равно половине пространства между двумя соседними строками.</p>
+                <p><span class="prop">stretch:</span> Строки равномерно растягиваются, заполняя свободное пространство.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">flex-grow</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_10">0</button>
+                <button id="dp-flex-button-2_10">1</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство flex-grow задает коэффициент роста flex для заданного числа. Отрицательное значение не валидно.</p>
+                <p><span class="usability">Применяется ко:</span> flex элементам.</p>
+                <p><span class="default">Значение по умолчанию:</span> 0.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">flex-shrink</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_11">0</button>
+                <button id="dp-flex-button-2_11">1</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство flex-shrink задает коэффициент сжатия flex с заданным числом. Отрицательное значение не валидно.</p>
+                <p><span class="usability">Применяется ко:</span> flex элементам.</p>
+                <p><span class="default">Значение по умолчанию:</span> 1.</p>
+            </div>
+        </section>
+
+        <section class="dp-flex">
+            <span class="flex-val-name">flex-basis</span>
+            <div class="show-container">
+                <div class="block first"><span>1</span></div>
+                <div class="block second"><span>2</span></div>
+                <div class="block third"><span>3</span></div>
+                <div class="block fourth"><span>4</span></div>
+                
+            </div>
+
+            <div class="buttons">
+                <button id="dp-flex-button-1_12">30%</button>
+                <button id="dp-flex-button-2_12">50%</button>
+                <button id="dp-flex-button-3_12">content</button>
+            </div>
+            <div class="description">
+                <p class="about">Свойство flex-basis определяет основу флекса, которая является начальным размером элемента. Похоже на свойства width и height, к которым добавляется содержимое элемента.</p>
+                <p><span class="usability">Применяется ко:</span> flex элементам.</p>
+                <p><span class="default">Значение по умолчанию:</span> auto.</p>
+            </div>
+        </section>
     </div>
     <script src="script.js"></script>
 </body>
